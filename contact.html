@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel = "icon" href = "images/icon.ico">
+
+	<title>Contact</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZEZDJ1C3M"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CZEZDJ1C3M');
+    </script>
+
+
+</head>
+
+<body>
+    <!--Skip to Main Content -->
+    <header>
+        <a class = "skip" href="#main">Skip to Main Content</a>
+
+          <nav>
+            <ul class = "links">
+                <li><a href = "index.html">Boroughs of New York </a></li>
+                <li><a href = "Brooklyn.html" > Brooklyn Coffee Shops </a></li>  
+                <li><a href = "Manhattan.html">Manhattan Coffee Shops</a></li>
+                <li><a href = "Queens.html">Queens Coffee Shops</a></li>
+                <li class="active"><a href = "contact.html" >Contact</a></li>
+            </ul>
+        </nav>
+    
+      <br>
+
+      <div class = "intro">
+
+        <h1 id="main">Contact Us + Coffee Recommendation</h1>
+  
+	  </div>
+ </header> 
+
+
+
+    <main>
+
+
+    <br>
+    <br>
+
+
+          <div class="flip-card" tabindex= "0">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src = "images/Profile.jpg" alt="Sachin Kurapati, Author of Website"/>
+              </div>
+              <div class="flip-card-back">
+                <p>Sachin Kurapati is a sophmore at the University of Michigan pursuing a dual degree in Business Administration and Computer Science. In his free time, Sachin likes to code as well as play basketball and go to the beach. </p>
+              </div>
+            </div>
+          </div>
+
+
+    <br>
+    <br>
+
+
+
+        <form
+        action= "https://formspree.io/f/mayvdyeo"
+        method="POST"
+        >
+
+    <div class = "formStyle">
+        <fieldset>
+            <i class="fa-solid fa-person"></i>
+            <legend>Recommendation</legend>
+            <label for="name">Name:</label><br>
+                <input type="text" class="entry" placeholder="First Last" id="name"><br>
+            <i class="fa-solid fa-envelope"></i>
+            <label for="email">Email:</label><br>
+                <input type="email" class="entry" placeholder="uniqname@umich.edu" name="address" id="email"><br>
+            <i class="fa-solid fa-comment-dots"></i>
+
+            <label for="comment">Comment:</label><br>
+                <textarea type="message entry" class="entry" placeholder="Comment" id="comment"></textarea><br>
+    
+            <button type="submit" class="submit">Submit!</button>
+        </fieldset>
+    </div>
+
+    </form>
+
+    <br>
+    <br>
+
+    
+    <form> 
+        <div class="form-group"> 
+            <label for="month">Enter the month you were born and get a coffee recommendation:</label> 
+            <input id="month"
+                   class="form-control" 
+                   type="text" 
+                   placeholder="Enter birth month here!"> 
+        </div> 
+        <div class="form-group"> 
+            <button id="btn-alert"
+                    class="btn" 
+                    type="submit"> 
+                 Submit  
+            </button> 
+        </div> 
+    </form> 
+
+
+ 
+
+
+    </main>
+
+    <footer>
+        <i class="fa-solid fa-mug-hot"></i>
+        <p>Sachin Kurapati &copy; 2022</p>
+    </footer>
+
+
+    <script>
+        var user_name = document.getElementById("month");
+        document.getElementById("btn-alert").addEventListener("click", function(){
+            var value=user_name.value;
+            console.log(value); 
+            if(!value)
+                alert("Name Cannot be empty!");
+            else if(value  == 'january' || value  == 'January'){
+                alert("Since you are born in January, we recommend you purchase a White Chocolate Mocha Latte!");
+            }else if(value == 'february' || value == 'February'){
+                alert("Since you are born in February, we recommend you purchase a Caramel Brulee Latte!")
+            }  else if(value == 'march' || value == 'March'){
+                alert("Since you are born in March, we recommend you purchase a Cinnamon Dolce Latte !")
+            }  else if(value == 'april' || value == 'April'){
+                alert("Since you are born in April, we recommend you purchase a Iced Americano")
+            }
+            else if(value == 'may' || value == 'May'){
+                alert("Since you are born in May, we recommend you purchase a Caramel Frappuccino!")
+            }
+            else if(value == 'june' || value == 'June'){
+                alert("Since you are born in June, we recommend you purchase a Mint Mocha!")
+            }
+            else if(value == 'july' || value == 'July'){
+                alert("Since you are born in July, we recommend you purchase a Cold Brew with a splash of milk and pump of vanilla")
+            }
+            else if(value == 'august' || value == 'August'){
+                alert("Since you are born in August, we recommend you purchase a Maple Iced Coffee!")
+            }
+            else if(value == 'september' || value == 'September'){
+                alert("Since you are born in September, we recommend you purchase a Dalgona Coffee!")
+            }
+            else if(value == 'october' || value == 'October'){
+                alert("Since you are born in October, we recommend you purchase a Pumpkin Spice Latte!")
+            }
+            else if(value == 'november' || value == 'November'){
+                alert("Since you are born in November, we recommend you purchase a Toffee Nut Latte!")
+            }
+            else if(value = 'december' || value == 'December'){
+                alert("Since you are born in December, we recommend you purchase a Gingerbread Latte!")
+            } 
+            else{
+                alert("Please enter a valid birth month");
+            }
+        });
+    </script>
+
+</body>

@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Ubuntu&display=swap');
+
+
+a{
+    color: white; 
+}
+
+body .skip{
+    color: black;
+}
+
+.active a{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+a.skip{
+    font-family: 'Ubuntu', sans-serif;
+    background: white;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+  
+    /* Requirement 3 code here*/
+    left: -500px; 
+     position: absolute; 
+  
+    
+}
+
+a.skip:focus{
+    top: 25px;
+    left: 10px;
+}
+
+
+
+img{
+    margin: 8px;
+    padding: 8px; 
+    width: 200px;
+    height: 200px;
+}
+
+
+img:hover{
+    border: dashed; 
+} 
+
+
+
+ 
+nav li{
+    padding: 17px; 
+}
+
+
+
+.links{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+    padding: 17px; 
+
+    background-color: brown;
+}
+
+footer{
+    background-color: brown;
+    padding: 32px 8px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+
+}
+
+.PageContainer .flexCard .flexContent{
+    color: black;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+
+.PageContainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.PageContainer .flexCard{
+
+    max-width: 470px;
+    background: rgb(250, 128, 114);
+    padding: 10px;
+    margin: 6px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.welcome h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.welcome p{
+    text-align: center;
+    padding-top: 20px;;
+}
+    
+#animationA {
+    animation: logo_move 5s;
+}
+
+@keyframes logo_move {
+    from {width: 5px; opacity: 0;}
+    to {width: 200px; opacity: 1;}
+}
+
+.intro{
+
+    background-attachment: fixed; 
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;       
+    background-color: #707070;
+  
+    min-height: 400px;               
+  
+    background-image: url(../images/Brook_background.jpg);
+}
+
+p {
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+.form {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.form-group{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.entry{
+    border: solid black 1px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center; 
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+  
+.submit{
+    border-radius: 5px;
+    font-size: 10;
+    padding: 5px;
+    width: 150px;
+    font-family: 'Ubuntu', sans-serif; 
+    color: black;
+    text-align: center;
+  
+}
+
+.formStyle{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.coffeeBevA {
+    display: grid;
+    grid-template-columns: 1fr; 
+    overflow: scroll;
+    justify-items: center;
+    padding: 5px;
+    background-color: beige;
+}
+
+.sampleBev{
+    text-align: center;
+    padding-left: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.coffeeBevA .beverage .beverageText{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.coffeeBevA .beverage .beverageImage:hover{
+    box-shadow: 10px 5px 5px red;
+}
+
+.flip-card img{
+    padding: 0;
+    margin: 0;
+}
+
+.flip-card{
+    margin-right: auto;
+    margin-left: auto
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 500px; 
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+@media screen and (min-width: 480px) {
+
+
+    h1{
+        font-size: 60px;
+    }
+
+
+    .links {
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-evenly;   
+    }
+
+    .intro p {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        padding-top: 9px;
+        padding: 20px 20px;
+    }
+
+    .PageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .PageContainer .flexCard {
+        width: 60%;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+    } 
+
+
+    .PageContainer .flexCard .flexImage {
+        align-self: center;
+        position: relative;
+        padding: 10px;
+    }
+    
+    .PageContainer .flexCard .flexImage {
+
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .PageContainer .flexCard .flexContent {
+        position: relative;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    
+    .coffeeBevA {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        overflow: scroll;
+        justify-items: center;
+        padding: 5px;
+        background-color: beige;
+    }
+
+}
+
+
+@media screen and (min-width: 850px) {
+
+    .links{
+
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 25px; 
+
+        background-color: brown;
+    }
+    .coffeeBevA {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5px;
+        background-color: beige;
+    }
+
+    
+}
+
+
+
+
+@media (prefers-reduced-motion){
+
+    /* animation on front page*/
+    #animationA{
+        animation: none;
+    }
+
+     /*flip card */
+    .flip-card-inner{
+        -webkit-transition: initial;        
+        transition: initial;
+        animation-duration: initial;
+    }
+
+    .intro{
+        background-attachment: initial;
+    
+    }
+
+}
